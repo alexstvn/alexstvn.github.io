@@ -1,0 +1,79 @@
+[
+  {
+    "id": "PracticeMapMar2026",
+    "title": "PracticeMap: Music Practice Tracker App",
+    "shortDescription": "An Android app for sheet-music-based practice tracking that uses color grading to show practice frequency.",
+    "longDescription": "PracticeMap is an Android app built for musicians who want to document their practice section by section. Users upload a PDF score and draw over lines of music to mark practice sections; the app tracks the date of each session and applies color grading (green to red) to highlight which sections need more recent attention. Built with an MVVM architecture, Room for local persistence, and custom view overlays for drawing directly on rendered PDF pages.",
+    "githubLink": "https://github.com/alexstvn/practice-map",
+    "techStack": [
+      "Java",
+      "Android Studio",
+      "Room",
+      "MVVM",
+      "androidx.pdf",
+      "JUnit / Espresso"
+    ],
+    "month": "March",
+    "year": 2026,
+    "previewImage": "assets/img/projects/practice_map.png",
+    "logo": "assets/img/projects/practice_map.png",
+    "field": "Mobile Development",
+    "motivation": "Built for musicians who wanted a way to document and visualize their practice section by section."
+  },
+  {
+    "id": "TransitDashAug2025",
+    "title": "Transportation Coordinator Ridership Dashboard",
+    "shortDescription": "An interactive Dash/Plotly dashboard analyzing campus shuttle ridership.",
+    "longDescription": "Built while serving as Transportation Coordinator and Data Science Intern at Brandeis University, this dashboard analyzes shuttle ridership across campus routes. It powers route schedule and bus type adjustments, aggregates and cleans large time-series ridership datasets, and includes a complaint analysis view used to evaluate driver punctuality and improve rider communication.",
+    "githubLink": "https://github.com/alexstvn/TransitDash",
+    "techStack": [
+      "Python",
+      "Dash",
+      "Plotly",
+      "Pandas"
+    ],
+    "month": "April",
+    "year": 2025,
+    "previewImage": "assets/img/projects/transit_dash.png",
+    "logo": "assets/img/projects/transitdash-logo.png",
+    "field": "Data Visualization",
+    "motivation": "To give campus transportation staff a clear, data-driven way to evaluate ridership and vendor performance."
+  },
+  {
+    "id": "UCDFacialRecognitionMay2024",
+    "title": "Facial Recognition and Poisoning Attacks in VR Research",
+    "shortDescription": "Research prototype exploring facial recognition and data poisoning vulnerabilities, built at University College Dublin.",
+    "longDescription": "Conducted as part of a STEM Summer Research Abroad program with Arcadia University and University College Dublin. Reviewed literature on privacy attacks in virtual reality and the effectiveness of federated learning defenses, then built a webcam-based facial recognition prototype to evaluate open-source vision libraries and document their vulnerabilities to poisoning attacks.",
+    "githubLink": "https://github.com/alexstvn/ucd_research_facialrecognition",
+    "techStack": [
+      "Python",
+      "Jupyter Notebook",
+      "Technical Writing"
+    ],
+    "month": "May",
+    "year": 2024,
+    "previewImage": "assets/img/projects/ucd_research_graph.png",
+    "logo": "assets/img/projects/ucd-logo.png",
+    "field": "Research",
+    "motivation": "Curiosity about privacy risks in VR and the real-world limitations of facial recognition systems."
+  },
+  {
+    "id": "MockAlumniWebappOct2023",
+    "title": "Brandeis Mock Alumni Web Application",
+    "shortDescription": "A full-stack mock alumni network with real-time chat and authentication.",
+    "longDescription": "A full-stack web application built with a responsive database schema and an authentication system. Includes a real-time chat feature using WebSockets, enabling live messaging across browser tabs for connected alumni.",
+    "githubLink": "https://github.com/alexstvn/mock_alumni_webapp",
+    "techStack": [
+      "Express.js",
+      "MongoDB",
+      "HTML/CSS/JS",
+      "EJS"
+    ],
+    "month": "Dec",
+    "year": 2023,
+    "previewImage": "assets/img/projects/mockalumnipage.png",
+    "logo": "assets/img/projects/mockalumnipage.png",
+    "field": "Full-Stack Development",
+    "motivation": "To practice building a complete authenticated, real-time full-stack application from scratch."
+  }
+]

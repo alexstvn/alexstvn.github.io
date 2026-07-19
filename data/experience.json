@@ -1,0 +1,135 @@
+[
+  {
+    "id": "AlgorithmsTeachingAssistantFall2026",
+    "company": "Northeastern University",
+    "roleTitle": "Teaching Assistant, Algorithms (CS5800)",
+    "startDate": "Sept 2026",
+    "endDate": "Present",
+    "briefDescription": "Second term supporting a graduate-level Algorithms course.",
+    "responsibilities": [
+      "Graded assignments and exams for a graduate-level Algorithms course"
+    ],
+    "techSkills": [
+      "Algorithms",
+      "Technical Communication"
+    ]
+  },
+  {
+    "id": "AccentureTechArchitectureAnalyst2026",
+    "company": "Accenture",
+    "roleTitle": "Technology Architecture Analyst",
+    "startDate": "June 2026",
+    "endDate": "Aug 2026",
+    "briefDescription": "Supported AI initiatives and modernization efforts for a New York Life Insurance engagement.",
+    "responsibilities": [
+      "Developed an LLM-powered ServiceNow integration that matched incoming user inquiries to the 5-10 most relevant previously resolved tickets, replacing manual keyword search across the full ticket history",
+      "Practiced submitting life insurance applications through the Accenture Life Insurance Platform (ALIP) to build platform and domain familiarity",
+      "Reformatted leadership and technical presentation decks for the Annuities Modernization workstream to align with client branding and improve clarity for stakeholder audiences",
+      "Contributed to process maps documenting Annuities Modernization workflows"
+    ],
+    "techSkills": [
+      "Python",
+      "LLMs / Prompt Engineering",
+      "ServiceNow",
+      "PowerPoint",
+      "Process Mapping"
+    ]
+  },
+  {
+    "id": "AlgorithmsTeachingAssistantSpring2026",
+    "company": "Northeastern University",
+    "roleTitle": "Teaching Assistant, Algorithms (CS5800)",
+    "startDate": "Jan 2026",
+    "endDate": "April 2026",
+    "briefDescription": "Supported a graduate-level Algorithms course through office hours and grading.",
+    "responsibilities": [
+      "Led weekly office hours to support students with algorithmic concepts and problem sets",
+      "Graded assignments and exams for a graduate-level Algorithms course",
+      "Developed teaching guides, templates, and annotated notes to assist struggling students"
+    ],
+    "techSkills": [
+      "Algorithms",
+      "Technical Communication"
+    ]
+  },
+  {
+    "id": "TransportationCoordinator2024",
+    "company": "Brandeis University",
+    "roleTitle": "Transportation Coordinator",
+    "startDate": "Sept 2024",
+    "endDate": "April 2025",
+    "briefDescription": "Managed data and reporting for campus shuttle operations and accessibility services.",
+    "responsibilities": [
+      "Developed and maintained a Python/Plotly dashboard to analyze ridership data, informing route schedule and bus type adjustments",
+      "Cleaned and compiled ridership data for Student Accessibility Services to assess usage of Accessible Transportation Services (ATS)",
+      "Improved file organization for ATS and ensured accurate hour logging for student workers",
+      "Conducted spot checks on app functionality and bus tracking systems used by students",
+      "Evaluated bus vendor performance and verified invoice accuracy",
+      "Reviewed and enhanced PowerPoint data visualizations to communicate findings to general audiences"
+    ],
+    "techSkills": [
+      "Python",
+      "Plotly",
+      "Data Analysis",
+      "Dashboarding"
+    ]
+  },
+  {
+    "id": "DataScienceInternTransportation2023",
+    "company": "Brandeis University",
+    "roleTitle": "Data Science Internal Intern (Transportation)",
+    "startDate": "Aug 2023",
+    "endDate": "May 2024",
+    "briefDescription": "Built dashboards to support data-driven decisions for campus transportation services.",
+    "responsibilities": [
+      "Developed a Python/Plotly dashboard visualizing student bus ridership across campus routes to support a new contractor selection decision",
+      "Identified data quality issues, including driver input errors and route tracking inaccuracies, as part of a data quality enhancement project",
+      "Built a ridership complaint analysis dashboard to assess complaint validity, leading to improved on-time stop enforcement and clearer rider communication"
+    ],
+    "techSkills": [
+      "Python",
+      "Plotly",
+      "Data Cleaning",
+      "Data Visualization"
+    ]
+  },
+  {
+    "id": "UPSDatabaseAdminIntern2023",
+    "company": "United Parcel Service (UPS)",
+    "roleTitle": "Database Administration Intern",
+    "startDate": "June 2023",
+    "endDate": "Aug 2023",
+    "briefDescription": "Built dashboards and automation tooling to support the DB2 administration team.",
+    "responsibilities": [
+      "Created Power BI dashboards evaluating trending DB2 packages and presented usage tutorials to the team",
+      "Automated the security certificate renewal process using AppViewX, Bash, and PowerShell, saving 15 minutes of manual work per certificate",
+      "Completed SQL assignments and wrote Python scripts to generate unique SQL reports by DB2 ID for team members"
+    ],
+    "techSkills": [
+      "Power BI",
+      "SQL",
+      "DB2",
+      "Bash",
+      "PowerShell",
+      "Python"
+    ]
+  },
+  {
+    "id": "UPSDatabaseAdminIntern2022",
+    "company": "United Parcel Service (UPS)",
+    "roleTitle": "Database Administration Intern",
+    "startDate": "June 2022",
+    "endDate": "Aug 2022",
+    "briefDescription": "Evaluated and improved DB2 monitoring and package management processes.",
+    "responsibilities": [
+      "Assessed the effectiveness of data compression algorithms to identify process improvements using JCL/SQL",
+      "Tested and demonstrated a feature to automate cleanup of obsolete packages in DB2 (IBM Admin Tool) using JCL",
+      "Executed JCL jobs to upgrade Guardium S-TAP, enhancing the DB2 monitoring system"
+    ],
+    "techSkills": [
+      "JCL",
+      "SQL",
+      "DB2"
+    ]
+  }
+]

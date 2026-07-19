@@ -1,0 +1,26 @@
+[
+  {
+    "id": "music",
+    "name": "Music / Piano",
+    "icon": "🎹",
+    "description": "Fun fact: I minored in music in college, particularly from a classical piano perspective! This is why music is very near and dear to my heart, and for fun I love creating tools that assist in musical endeavors.",
+    "relatedProjects": ["PracticeMapMar2025"],
+    "image": "assets/img/interests/music.png"
+  },
+  {
+    "id": "sea-culture",
+    "name": "Southeast Asian Cultural Awareness",
+    "icon": "🇹🇭",
+    "description": "During my undergraduate studies, I was heavily involved in my campus's Southeast Asia Club (SEAC) through roles like Digital Media Chair and President. I love fostering community and raising awareness of Southeast Asian, particularly Thai, culture.",
+    "relatedProjects": [],
+    "image": "assets/img/interests/seac.JPG"
+  },
+  {
+    "id": "art",
+    "name": "Art & Comics",
+    "icon": "🖌️",
+    "description": "Something I'm particularly passionate about is dabbling in graphic design and making comics about my life!",
+    "relatedProjects": [],
+    "image": "assets/img/interests/art.png"
+  }
+]

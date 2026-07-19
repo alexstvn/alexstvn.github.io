@@ -1,0 +1,6 @@
+{
+  "languages": ["Java", "Python", "C++", "JavaScript", "HTML / CSS", "JCL", "SQL"],
+  "dataScience": ["Power BI", "Tableau", "Plotly", "Pandas", "scikit-learn", "PyTorch"],
+  "webTech": ["HTML", "CSS", "EJS", "Node.js", "MongoDB", "Express.js"],
+  "otherTools": ["Microsoft Office Suite", "JCL / DB2", "Claude Code", "Android Studio"]
+}

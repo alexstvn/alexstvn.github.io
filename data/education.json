@@ -1,0 +1,20 @@
+[
+  {
+    "id": "NortheasternMS",
+    "universityName": "Northeastern University",
+    "degree": "M.S. Computer Science",
+    "gpa": "4.0 / 4.0",
+    "startYear": 2025,
+    "endYear": 2027,
+    "logo": "assets/img/edu/neu_icon.png"
+  },
+  {
+    "id": "BrandeisBS",
+    "universityName": "Brandeis University",
+    "degree": "B.S. Computer Science, Music Minor",
+    "gpa": "3.86 / 4.0 · Summa Cum Laude · Leonard Bernstein Fellow",
+    "startYear": 2021,
+    "endYear": 2025,
+    "logo": "assets/img/edu/brandeis_icon.svg"
+  }
+]

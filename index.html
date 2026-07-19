@@ -1,167 +1,192 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Alexandria Stevenson's personal website and resume">
-    <title>Alex Stevenson | Resume & Portfolio</title>
-    <link rel="stylesheet" href="assets/css/style.css">
-    <link rel="icon" href="assets/img/White2Sparkle.png" type="image/png">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" integrity="sha512-C1x+..." crossorigin="anonymous" referrerpolicy="no-referrer" />
-
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Alexandria Stevenson — Portfolio</title>
+<link rel="icon" href="assets/img/design/icon.png" onerror="this.remove()">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,wght@0,400;0,500;1,400;1,500&family=Inter:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/css/style.css">
 </head>
 <body>
-    <div id="hero">
-        <!-- HEADER/NAV BAR -->
-        <header>
-            <div class="container header-bar">
-                <div class="logo">
-                    <img src="assets/img/White2Sparkle.png" class="logo-img">
-                    <h3>Alexandria Stevenson</h3>
-                </div>
-                <nav class="nav-links">
-                    <a href="index.html" title="Home"><i class="fas fa-house"></i></a>   
-                    <!-- <a href="projects.html">Projects</a> -->
-                    <a href="contact.html">Contact</a>
-                </nav>
-            </div>
-        </header>
-        
-        <!-- BODY OF WEBSTIE -->
-        <section id="intro">
-            <section id="intro-text">
 
-                <h1>Hello!</h1>
-                <h2>I'm <b>Alex Stevenson</b>.</h2>
-                <p>
-                    I’m a <b>Master’s student in Computer Science at Northeastern University</b>, passionate about AI, data visualization, and music-AI collaboration. Using Python in my data science work, I enjoy creating clear, insightful visualizations using tools like Plotly and Pandas. I’m eager to engage in AI and data science research.
-                </p>
-                <p>
-                    Outside of tech, I love playing piano, making comics, and learning new languages (whether it's Thai or C++).
-                </p>
-                
-                <!-- maybe can include some buttons for For Fun + Resume PDF -->
-            </section>
-            <section id="intro-portrait">
-                <img src="assets/img/GradPortraitOutlined.png">
-            </section>
-        </section>
-        
+<nav class="site-nav">
+  <a class="brand" href="#hero">
+    <img src="assets/img/design/icon.png" alt="" onerror="this.remove()">
+    alexandria stevenson
+  </a>
+  <button class="nav-toggle" aria-label="Toggle menu">☰</button>
+  <ul>
+    <li><a href="#about">About Me</a></li>
+    <li><a href="#experience">Experience</a></li>
+    <li><a href="#education">Education</a></li>
+    <li><a href="#projects">Projects</a></li>
+    <li><a href="#connect">Contact</a></li>
+  </ul>
+</nav>
+
+<!-- ============ HERO ============ -->
+<section class="hero" id="hero">
+  <div class="hero-greeting" id="hero-greeting-text"></div>
+  <h1 class="hero-name">Alexandria Stevenson</h1>
+  <div class="hero-role">MSCS @ Northeastern University • SUMMER TECH ANALYST @ ACCENTURE</div>
+  <div class="hero-scroll">scroll ↓</div>
+</section>
+
+<!-- ============ ABOUT ============ -->
+<section class="section-pad" id="about">
+  <div class="container about-grid">
+    <div class="about-desc">
+      <!-- STATUS PILL -->
+      <span class="status-pill">Open to Full-Time Roles</span>
+
+      <!-- ICON + HEADER -->
+      <h2 class="section-title"><span class="title-icon"><img src="assets/img/design/icon.png" alt="" onerror="this.remove()"></span> about me.</h2>
+      <!-- DESCRIPTION -->
+      <p>I'm a Master's student in Computer Science at Northeastern University, scheduled to graduate this May. I'm passionate about seeing how tech and creative arts intersect, particularly music, and I love how software, data, and AI can advance that intersection.</p>
+
+      <!-- MY INTERESTS -->
+      <div class="interests">
+        <h3 class="section-title">beyond my screen.</h3>
+        <div class="interests-intro">
+          <p>A small deck of what I care about outside of CS. </p>
+          <p class="instructions">Press play to read more, or browse the whole deck at once.</p>
+        </div>
+          
+      
+        <div class="interest-player" id="interest-player">
+          <div class="player-photo" id="player-photo"></div>
+          <div class="player-panel">
+            <div class="player-name" id="player-name"></div>
+            <div class="player-counter" id="player-counter"></div>
+            <div class="player-controls">
+              <button class="player-btn" id="player-prev" aria-label="Previous interest">
+                <svg viewBox="0 0 24 24">
+                  <path d="M12 12 23 5v15z" />
+                  <path d="M2 12 12 5v14z" />
+                </svg>
+              </button>
+      
+              <button class="player-btn player-btn-play" id="player-play" aria-label="Read about this interest">
+                <svg viewBox="0 0 24 24">
+                  <path d="M6 4l14 8-14 8z" />
+                </svg>
+              </button>
+      
+              <button class="player-btn" id="player-next" aria-label="Next interest">
+                <svg viewBox="0 0 24 24">
+                  <path d="M13 5l10 7-10 7z" />
+                  <path d="M2 5l10 7-10 7z" />
+                </svg>
+              </button>
+            </div>
+          </div>
+        </div>
+      
+      </div>
     </div>
-    <main class="container">
-        <section id="featured-projects">
-            <h1>Projects at a <b>Glance</b></h1>
-            
-            <div class="carousel-wrapper">
-                <!-- Scroll Buttons -->
-                <!-- <button class="carousel-btn left">‹</button>
-                <button class="carousel-btn right">›</button> -->
-                
-                <!-- Scrollable container -->
-                <div class="carousel">
-                    <div class="project-grid">
-                        <!-- Project Cards Start -->
-                        <article class="project-card">
-                            <img src="assets/img/DashboardScreenshot.png" alt="Project Screenshot">
-                            <div class="project-content">
-                                <h3>Transportation Coordinator Dashboard</h3>
-                                <h4>April 2025</h4>
-                                <p>The Transportation Coordinator Dashboard is a Python Dash application that visualizes campus shuttle ridership data to support operational decisions. It enables analysis of time-based trends and stop utilization, helping optimize vehicle capacity, schedules, and routes. The dashboard relies on preprocessed data to ensure accurate, actionable insights.</p>
-                                <div class="project-buttons">
-                                    <a href="https://github.com/alexstvn/TransportationCoordinatorDashboard" target="_blank" rel="noopener noreferrer">
-                                        <button>GitHub</button>
-                                    </a>
-                                </div>
-                            </div>
-                        </article>
 
-                        <article class="project-card">
-                            <img src="assets/img/UCD_Research_Graph.png" alt="Project Screenshot">
-                            <div class="project-content">
-                                <h3>Privacy Risk Research & Web-Based Facial Recognition System</h3>
-                                <h4>August 2024</h4>
-                                <p>This repository contains Jupyter notebooks implementing a real-time facial recognition system using Adam Geitgey's
-                                face-recognition library along with adversarial poisoning experiments. The project demonstrates how to encode, store,
-                                load, and recognize faces, and explores how facial recognition models can be attacked and manipulated. 
-                                The repository also contains my research documents, like my poster and literature reviews as part of my program (on privacy risk assessments in virtual reality systems).</p>
-                                <div class="project-buttons">
-                                    <a href="https://github.com/alexstvn/ucd_research_facialrecognition" target="_blank"
-                                        rel="noopener noreferrer">
-                                        <button>GitHub</button>
-                                    </a>
-                                </div>
-                            </div>
-                        </article>
+    <!-- PORTRAIT FRAME -->
+    <div class="portrait-frame">
+      <img src="assets/img/portrait.JPG" alt="Portrait of Alexandria Stevenson"
+           onerror="this.replaceWith(Object.assign(document.createElement('div'),{className:'placeholder',textContent:'Add assets/img/portrait.png'}))">
+    </div>
+  </div>
+</section>
 
-                        <article class="project-card">
-                            <img src="assets/img/MockAlumniPageScreenshot.png" alt="Project Screenshot">
-                            <div class="project-content">
-                                <h3>Mock Alumni Website</h3>
-                                <h4>December 2022</h4>
-                                <p>The Brandeis Students & Alumni Association (BSAA) is a full-stack web application designed to connect Brandeis
-                                University students and alumni through job postings, events, and real-time communication. Built with Node.js, Express,
-                                MongoDB, and Socket.IO, the platform features secure user authentication, a job board, an event management system with RSVP functionality, and a real-time chat room. The app ensures role-based
-                                access control, allowing students, alumni, and admins to interact with content based on their permissions. </p>
-                                <div class="project-buttons">
-                                    <a href="https://github.com/alexstvn/mock_alumni_webapp" target="_blank"
-                                        rel="noopener noreferrer">
-                                        <button>GitHub</button>
-                                    </a>
-                                </div>
-                            </div>
-                        </article>
-                        
-                        <!-- <article class="project-card">
-                            <img src="assets/img/web-developer-portfolio.png" alt="Project Screenshot">
-                            <div class="project-content">
-                                <h3>Project Name</h3>
-                                <h4>Month Year</h4>
-                                <p>Brief description of the project...</p>
-                                <div class="project-buttons">
-                                    <button>Web Demo</button>
-                                    <button>GitHub</button>
-                                    <button>Article</button>
-                                </div>
-                            </div>
-                        </article> -->
-                        <!-- <article class="project-card">
-                            <img src="assets/img/web-developer-portfolio.png" alt="Project Screenshot">
-                            <div class="project-content">
-                                <h3>Project Name</h3>
-                                <h4>Month Year</h4>
-                                <p>Brief description of the project...</p>
-                                <div class="project-buttons">
-                                    <button>Web Demo</button>
-                                    <button>GitHub</button>
-                                    <button>Article</button>
-                                </div>
-                            </div>
-                        </article> -->
-                        <!-- Repeat article.project-card as needed -->
-                    </div>
-                </div>
-            </div>
-        </section>
-        
-    </main>
-    
-    <!-- FOOTER -->
-    <footer class="container footer-inline">
-        <p>© 2025 Alexandria Stevenson</p>
-        <a href="mailto:stevenson.alex.p@gmail.com" title="Email">
-            <i class="fas fa-envelope"></i>
-        </a>
-        <a href="https://github.com/alexstvn" target="_blank" title="GitHub">
-            <i class="fab fa-github"></i>
-        </a>
-        <a href="https://linkedin.com/in/alexandriapstevenson" target="_blank" title="LinkedIn">
-            <i class="fab fa-linkedin"></i>
-        </a>
-    </footer>
+<!-- ============ BEYOND MY SCREEN ============ -->
 
-    <script src="assets/js/carousel.js"></script>
+<div class="motif-divider"></div>
+<!-- ============ EXPERIENCE + EDUCATION ============ -->
+<section class="section-pad" id="experience">
+  <div class="container exp-edu-grid">
+    <div>
+      <h2 class="section-title">experience.</h2>
+      <div id="experience-list"></div>
+    </div>
+    <div id="education">
+      <h2 class="section-title">education.</h2>
+      <div id="education-list"></div>
+
+      <div class="skills-block">
+        <h3>skills.</h3>
+        <div id="skills-block-content"></div>
+      </div>
+
+      <div class="resume-wrap">
+        <button class="btn-resume" id="resume-btn" type="button">View My Resume</button>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ PROJECTS AT A GLANCE ============ -->
+<section class="projects-section" id="projects">
+  <div class="container" style="padding: 0;">
+    <h2 class="section-title">projects at a glance</h2>
+    <div class="section-sub">filter by field or year — scroll to see more</div>
+    <div class="filters" id="project-filters"></div>
+  </div>
+  <div class="project-carousel" id="project-carousel"></div>
+  <div class="view-more-wrap">
+    <a class="btn-outline" href="https://github.com/alexstvn" target="_blank" rel="noopener">View all projects on GitHub →</a>
+  </div>
+</section>
+
+<!-- ============ CONNECT ============ -->
+<footer class="footer" id="connect">
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-text">
+        <span class="thanks-pill">Thank you for your time</span>
+        <h2>connect<br>with me.</h2>
+      </div>
+      <div class="footer-links">
+        <a href="https://linkedin.com/in/alexandriastevenson" target="_blank" rel="noopener">
+          <span class="link-icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24"><path d="M4.98 3.5a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5zM3 9h4v12H3zM9 9h3.8v1.7h.05c.53-1 1.83-2.05 3.77-2.05 4.03 0 4.78 2.65 4.78 6.1V21h-4v-5.3c0-1.27-.02-2.9-1.77-2.9-1.77 0-2.04 1.38-2.04 2.8V21H9z"/></svg>
+          </span>
+          <span class="link-label">alexandriastevenson</span>
+        </a>
+        <a href="https://github.com/alexstvn" target="_blank" rel="noopener">
+          <span class="link-icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.58 2 12.25c0 4.53 2.87 8.37 6.84 9.73.5.09.68-.22.68-.49 0-.24-.01-.87-.01-1.71-2.78.62-3.37-1.37-3.37-1.37-.45-1.18-1.11-1.49-1.11-1.49-.91-.64.07-.62.07-.62 1 .07 1.53 1.06 1.53 1.06.89 1.56 2.34 1.11 2.91.85.09-.66.35-1.11.63-1.37-2.22-.26-4.56-1.14-4.56-5.06 0-1.12.39-2.03 1.03-2.75-.1-.26-.45-1.3.1-2.71 0 0 .84-.28 2.75 1.05a9.36 9.36 0 0 1 5 0c1.91-1.33 2.75-1.05 2.75-1.05.55 1.41.2 2.45.1 2.71.64.72 1.03 1.63 1.03 2.75 0 3.93-2.34 4.79-4.57 5.05.36.32.68.94.68 1.9 0 1.37-.01 2.47-.01 2.81 0 .27.18.59.69.49A10.26 10.26 0 0 0 22 12.25C22 6.58 17.52 2 12 2z"/></svg>
+          </span>
+          <span class="link-label">github.com/alexstvn</span>
+        </a>
+        <a href="mailto:stevenson.alex.p@gmail.com">
+          <span class="link-icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24"><path d="M3 5h18a1 1 0 0 1 1 1v12a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V6a1 1 0 0 1 1-1zm9 7.2 8-5.2H4zM4 8.3V18h16V8.3l-8 5.2z"/></svg>
+          </span>
+          <span class="link-label">stevenson.alex.p@gmail.com</span>
+        </a>
+      </div>
+    </div>
+    <div class="footer-bottom">© 2026 Alexandria Stevenson</div>
+  </div>
+</footer>
+
+<!-- ============ MODAL ============ -->
+<div class="modal-overlay" id="modal-overlay">
+  <div class="modal-card">
+    <button class="modal-close" id="modal-close" aria-label="Close">✕</button>
+    <div id="modal-body"></div>
+  </div>
+</div>
+
+<!-- ============ RESUME MODAL ============ -->
+<div class="modal-overlay" id="resume-overlay">
+  <div class="resume-card">
+    <button class="modal-close" id="resume-close" aria-label="Close">✕</button>
+    <h3>my resume.</h3>
+    <div class="resume-preview">
+      <iframe src="assets/resume.pdf#toolbar=0&view=FitH" title="Resume preview"></iframe>
+    </div>
+    <a class="btn-download" href="assets/resume.pdf" download>Download</a>
+  </div>
+</div>
+
+<script src="assets/js/main.js"></script>
 </body>
 </html>
